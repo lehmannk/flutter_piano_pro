@@ -54,8 +54,12 @@ class PianoView extends StatelessWidget {
                 width: whiteButtonWidth - ((whiteButtonWidth / 100) * 2),
                 height: whiteButtonHeight,
                 decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.grey,
+                      width: 1.0,
+                    ),
                     color: buttonColors?[currentNote.midiNoteNumber] ??
-                        Colors.grey,
+                        Colors.white,
                     borderRadius: BorderRadius.only(
                         bottomRight: Radius.circular(whiteButtonWidth / 7),
                         bottomLeft: Radius.circular(whiteButtonWidth / 7))),
